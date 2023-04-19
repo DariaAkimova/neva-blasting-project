@@ -1,0 +1,93 @@
+@@include('./templates/head.html', { "title": "Нева Бластинг", "description": "2"})
+
+
+<main class="main-container">
+  <div class="container">
+    <h1 class="visually-hidden">Нева Бластинг</h1>
+    <section class="main-container__section promo">
+      <!-- <div class="promo__background"></div> -->
+
+      <!-- <header class="promo__header"> -->
+      <h2 class="promo__title">Нева Бластинг</h2>
+      <ul class="promo__text promo-text">
+        <li class="promo-text__item">Пескоструйная очистка</li>
+        <li class="promo-text__item">Окраска поверхностей</li>
+        <li class="promo-text__item">Огнезащитная обработка</li>
+      </ul>
+      <!-- </header> -->
+      <button class="promo__button order-btn button">Оставить заявку</button>
+    </section>
+    <section class="main-container__section section info">
+      <h2 class="section__title section-title">Пескоструйная очистка</h2>
+      <div class="info-text">
+        <p class="info-text__description"> Пескоструйная очистка (пескоструйная обработка), подготовка поверхностей к
+          окраске,
+          нанесение лакокрасочных и огнезащитных составов - основное направление деятельности нашей компании. </p>
+        <p class="info-text__description"> Пескоструйная очистка фасадов зданий от различного рода загрязнений -
+          актуальная
+          услуга для Санкт-Петербурга. Мы подбираем технологию и материалы для очистки именно вашего фасада, в
+          зависимости
+          от его облицовки.</p>
+        <p class="info-text__description"> Наши специалисты имеют опыт участия в работах по реставрации памятников
+          архитектуры,
+          где применяется щадящий метод мягкой очистки реставрируемой поверхности от загрязнений (метод СВАО) без
+          разрушения исторической основы.<br>
+        </p>
+      </div>
+
+    </section>
+    <section class="main-container__section section">
+
+      <h2 class="section__title section-title">Этапы заказа</h2>
+      <ul class="order-steps">
+        <li class="order-steps__item">
+          <p class="order-steps__description"> Вы оставляете нам заявку
+          </p>
+        </li>
+        <li class="order-steps__item">
+          <p class="order-steps__description">Обсуждаем все детали заказа
+          </p>
+        </li>
+        <li class="order-steps__item">
+          <p class="order-steps__description">Фиксируем объем и стоимость работ
+          </p>
+        </li>
+        <li class="order-steps__item">
+          <p class="order-steps__description">Выполняем заказ</p>
+        </li>
+        <li class="order-steps__item">
+          <p class="order-steps__description">Сдаем заказ в оговоренный срок</p>
+        </li>
+      </ul>
+    </section>
+    <section class="main-container__section">
+      <h2 class="section__title section-title">Так проводится пескоструйная обработка</h2>
+
+      <!-- <iframe width="100%" height="168" class="video"
+        src="https://www.youtube.com/watch?v=-oh1QpC6Yz4&t=1s">
+        </iframe> -->
+      <iframe class="video" width="100%" height="168" src="https://www.youtube.com/embed/-oh1QpC6Yz4"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+    </section>
+  </div>
+  </div>
+</main>
+<footer class="footer">
+  @@include('./templates/footer.html')
+</footer>
+<button class="button-up hidden" type="button" aria-label="Наверх"></button>
+
+
+
+@@include('./templates/modal-form.html')
+@@include('./templates/modal-messages.html')
+@@include('./templates/script-block.html')
+
+
+<script type="module" src="js/modal-actions.js"></script>
+</body>
+
+</html>

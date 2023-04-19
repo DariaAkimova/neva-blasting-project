@@ -1,0 +1,36 @@
+.social__link {
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  @media (min-width: @desktop-width) {
+    width: 30px;
+    height: 30px;
+  }
+
+  &:hover {
+    .social__icon {
+      opacity: 0.8;
+    }
+  }
+
+  &:active {
+    .social__icon {
+      opacity: 0.3;
+    }
+  }
+}
+
+.social__icon {
+  width: 18px;
+  height: auto;
+
+  &--main {
+    width: 25px;
+    fill: @main-grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 30px;
+  }
+}

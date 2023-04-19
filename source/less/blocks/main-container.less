@@ -1,0 +1,33 @@
+.main-container {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  padding-top: 25px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 16px;
+  }
+}
+
+.main-container.no-js {
+  @media (max-width: @mobile-width-only) {
+    padding-top: 230px;
+  }
+}
+
+.main-container__section {
+  margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 70px;
+  }
+
+  &--no-margin {
+    @media (min-width: @tablet-width) {
+      margin: 0;
+    }
+  }
+}

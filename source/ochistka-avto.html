@@ -1,0 +1,124 @@
+@@include('./templates/head.html', { "title": "Песокструйная очистка дисков", "description": "2"})
+
+
+<main class="main-container no-js">
+  <div class="container">
+    <h1 class="section__title section-title">ПЕСКОСТРУЙНАЯ ОЧИСТКА металла</h1>
+    <div class="central-block">
+      <section class="main-container__section section ">
+        <h2 class="visually-hidden">ПЕСКОСТРУЙНАЯ ОЧИСТКА металла</h2>
+        <!-- Slider main container -->
+        <div class="swiper mySwiper">
+
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide"> <img src="img/catalog/ochistka-kirpich3.jpg"
+                alt="Сотрудники компании Нева Бластинг за работой" class="about-service__img" width="300" height="117">
+            </div>
+            <div class="swiper-slide"> <img src="img/catalog/beton5.jpg"
+                alt="Сотрудники компании Нева Бластинг за работой" class="about-service__img" width="300" height="117">
+            </div>
+            <div class="swiper-slide"> <img src="img/catalog/ochistka-avtomobilya2.jpg"
+                alt="Сотрудники компании Нева Бластинг за работой" class="about-service__img" width="300" height="117">
+            </div>
+            <div class="swiper-slide"> <img src="img/catalog/ochistka-dereva4.jpg"
+                alt="Сотрудники компании Нева Бластинг за работой" class="about-service__img" width="300" height="117">
+            </div>
+            <div class="swiper-slide"> <img src="img/catalog/ochistka-spectehniki.jpg"
+                alt="Сотрудники компании Нева Бластинг за работой" class="about-service__img" width="300" height="117">
+            </div>
+            <div class="swiper-slide"> <img src="img/catalog/ochistka-fasada.jpg"
+                alt="Сотрудники компании Нева Бластинг за работой" class="about-service__img" width="300" height="117">
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+
+        </div>
+
+      </section>
+
+
+      <section class="main-container__section section central-block">
+        <table class="price-table">
+          <thead class="price-table__header">
+            <tr class="price-table__row  price-table__row--main">
+              <th class="price-table__header-item">Наименование работ</th>
+              <th class="price-table__header-item">Стоимость</th>
+            </tr>
+          </thead>
+          <tbody class="price-table__body">
+            <tr class="price-table__row">
+              <td class="price-table__service-name">Удаление поверхностной коррозии/ржавчины</td>
+              <td class="price-table__price">от 350 руб. за м<sup>2</sup></td>
+            </tr>
+            <tr class="price-table__row">
+              <td class="price-table__service-name">Удаление глубокой коррозии/ржавчины</td>
+              <td class="price-table__price">от 380 руб. за м<sup>2</sup></td>
+            </tr>
+            <tr class="price-table__row">
+              <td class="price-table__service-name">Удаление лакокрасочного покрытия</td>
+              <td class="price-table__price">от 380 руб. за м<sup>2</sup></td>
+            </tr>
+            <tr class="price-table__row">
+              <td class="price-table__service-name">Удаление лакокрасочного покрытия (порошковой краски)</td>
+              <td class="price-table__price">от 490 руб. за м<sup>2</sup></td>
+            </tr>
+            <tr class="price-table__row">
+              <td class="price-table__service-name">Удаление окалины</td>
+              <td class="price-table__price">от 480 руб. за м<sup>2</sup></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <button class="about-service__btn order-btn button">Оставить заявку</button>
+
+      </section>
+      <section class="main-container__section section info-text service-description">
+        <p class="service-descriptionn__text "> Наша компания занимается пескоструйной очисткой металлоконструкций на
+          строительных объектах Санкт-Петербурга и области. </p>
+        <p class="service-description__text"> Специалисты нашей компании выполнят ваш заказ любого объема и сложности.
+          Подвижные установки очищают поверхности различных металлоконструкций со скоростью до 40 кв. м в час.</p>
+        <p class="service-description__text"> Для подъема установки к месту очистки можно воспользоваться автовышкой
+          или
+          обычными строительными лесами. <br>
+        </p>
+        <figure class="service-description__img-info">
+          <figcaption class="service-description__text">
+
+            Лицензия МЧС на выполнение работ по огнезащите материалов, изделий и конструкций.
+
+          </figcaption>
+          <a href="img/license.jpeg" class="service-description__link" target="_blank">
+            <img src="img/license.jpeg" alt="Лицензия МЧС" class="service-description__img" width="260" height="360">
+          </a>
+        </figure>
+
+      </section>
+
+      <section class="main-container__section">
+        <p class="main-section__text">*Учитывая, что каждый заказ индивидуален, все цены даны ориентировочно. Чтобы
+          узнать
+          итоговую цену, оставьте заявку и получите консультацию нашего специалиста!</p>
+      </section>
+
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  @@include('./templates/footer.html')
+</footer>
+<button class="button-up hidden" type="button" aria-label="Наверх"></button>
+
+@@include('./templates/modal-form.html')
+@@include('./templates/modal-messages.html')
+@@include('./templates/script-block.html')
+
+<script type="module" src="js/modal-actions.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+.button-up {
+  position: fixed;
+  z-index: 1000;
+  right: 20px;
+  bottom: 20px;
+  height: 30px;
+  width: 30px;
+  border: none;
+  background-image: url(../../img/arrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: @main-green;
+  background-size: 30%;
+  border: 1px solid @main-green;
+  border-radius: 50px;
+  transform: rotate(-90deg);
+
+  @media (min-width: @desktop-width) {
+    height: 50px;
+    width: 50px;
+  }
+}

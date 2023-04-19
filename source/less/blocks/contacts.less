@@ -1,0 +1,47 @@
+.contacts-info {
+  .flex-column();
+  align-items: flex-start;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 46px;
+  }
+}
+
+.contacts-info__info {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contacts-info__phone-wrapper {
+  .flex-column();
+  align-items: flex-start;
+}
+
+.contacts-info__text {
+  margin: 0 10px 0 0;
+  flex-basis: 142px;
+  font-weight: 600;
+
+  @media (min-width: @tablet-width) {
+    flex-basis: 220px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-basis: 155px;
+    margin-right: 30px;
+  }
+}
+
+.contacts-info__value {
+  flex-basis: 224px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    flex-basis: 315px;
+  }
+
+  &--social {
+    justify-self: flex-start;
+  }
+}

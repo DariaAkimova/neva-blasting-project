@@ -1,0 +1,117 @@
+.service-card {
+  // width: 280px;
+
+  background: @text-block-bg;
+  border-radius: 10px;
+  padding: 0 0 20px;
+
+  @media (min-width: @desktop-width) {
+    // padding: 0 38px 45px;
+    padding: 0 0 44px;
+    font-size: 14px;
+  }
+}
+
+.service-card__wrapper {
+  // display: grid;
+  // grid-template-columns: 1fr;
+  // grid-template-areas:
+  //   "card-title"
+  //   "card-description"
+  //   "cardinfo"
+  //   "card-btn";
+
+  // justify-content: center;
+  // align-items: center;
+  .flex-column();
+  align-items: flex-start;
+
+  @media (min-width: @tablet-width) {
+    // padding: 0 38px 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    // grid-template-columns: 1fr;
+    // grid-template-areas:
+    //   "card-img"
+    //   "card-title"
+    //   "card-info"
+    //   "card-btn";
+  }
+}
+
+.service-card__title {
+  // grid-area: card-title;
+  margin-bottom: 13px;
+  padding: 0 5px;
+
+  @media (min-width: @tablet-width) {
+    margin: 20px 0 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 17px 0 30px;
+    padding: 0 12px;
+  }
+}
+
+.service-card__description {
+  margin: 0 0 18px 0;
+  text-align: left;
+  padding: 0 5px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 30px;
+    padding: 0 12px;
+  }
+}
+
+.service-card__info {
+  margin-top: 0;
+  margin-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.service-card__order-button {
+  margin: 0;
+  width: 250px;
+
+  align-self: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.service-card__image {
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 14px;
+  }
+}
+
+.service-card__image {
+  border-radius: 10px 10px 0 0;
+
+  width: 100%;
+}

@@ -1,0 +1,26 @@
+.price-table__header {
+  font-weight: 600;
+}
+
+.price-table__row {
+  .table-row(5px 0 7px);
+  &--main {
+    .table-row(0 0 18px);
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 15px;
+  }
+}
+
+.price-table__service-name {
+  margin-right: 20px;
+  flex-basis: 170px;
+  flex-grow: 2;
+}
+
+.price-table__price {
+  text-align: right;
+  flex-basis: 94px;
+  flex-grow: 1;
+}

@@ -1,0 +1,27 @@
+.secondary-list {
+  counter-reset: num2;
+  padding-left: 0;
+}
+
+.secondary-list__item {
+  counter-increment: num2;
+  list-style: none;
+
+  &:not(:first-child) {
+    margin-top: 5px;
+  }
+  &::before {
+    content: counter(num) "." counter(num2);
+    margin-right: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+    &::before {
+      content: counter(num) "." counter(num2);
+      margin-right: 20px;
+    }
+  }
+}

@@ -1,0 +1,137 @@
+@@include('./templates/head.html', { "title": "Контакты", "description": "2"})
+
+
+<main class="main-container">
+  <div class="container">
+    <h1 class="section__title section-title">Контакты</h1>
+
+    <div class="contacts-wrapper info-text main-container__section">
+      <section class="main-container__section">
+
+        <h2 class="visually-hidden">Контактная информация</h2>
+        <div class="contacts-info">
+          <div class="contacts-info__info">
+            <p class="contacts-info__text contacts-info__info--phone">Телефоны для физ. лиц:</p>
+            <div class="contacts-info__phone-wrapper contacts-info__value">
+              <a class="contacts-info__phone-link" href="tel:+79219475003">+7 (921) 947-50-03</a>
+              <a class="contacts-info__phone-link" href="tel:+79219475004">+7 (921) 947-50-04</a>
+            </div>
+          </div>
+          <div class="contacts-info__info">
+            <p class="contacts-info__text">Телефон для юр. лиц:</p>
+            <a class="contacts-info__phone-link contacts-info__value" href="tel:+79219388038">+7 (921) 938-80-38</a>
+          </div>
+          <div class="contacts-info__info">
+            <p class="contacts-info__text">Адрес:</p>
+            <p class="contacts-info__value"> г. Санкт-Петербург, Челябинская ул., д. 109</p>
+
+          </div>
+          <div class="contacts-info__info">
+            <p class="contacts-info__text">E-mail:</p>
+            <a href="mailto:mail@peskostruy-pokraska.ru" class="contacts-info__value">mail@peskostruy-pokraska.ru</a>
+
+          </div>
+          <div class="contacts-info__info social">
+            <p class="contacts-info__text"></p>
+            <a href="https://vk.com/public92550848" target="_blank"
+              class="contacts-info__value contacts-info__value--social social__link">
+              <!-- <img src="../img/vk-icon.svg"
+                width="20" class="social__icon social__icon--main"> -->
+              <svg class="social__icon social__icon--main" xmlns="http://www.w3.org/2000/svg" fill="#ffffff"
+                height="800" width="1200" viewBox="-4.79889 -4.75 41.59038 28.5">
+                <path fill-rule="evenodd"
+                  d="M31.2584 1.2866C31.4808.5449 31.2584 0 30.2 0h-3.5c-.89 0-1.3002.4708-1.5227.9898 0 0-1.7799 4.3384-4.3013 7.1565-.8157.8157-1.1866 1.0753-1.6315 1.0753-.2225 0-.5562-.2596-.5562-1.0011v-6.934C18.6883.3967 18.4417 0 17.7 0h-5.5c-.5561 0-.8906.413-.8906.8045 0 .8436 1.2607 1.0382 1.3906 3.4113V9.37c0 1.13-.204 1.3349-.649 1.3349-1.1865 0-4.0728-4.3578-5.7845-9.3442C5.931.3915 5.5945 0 4.7 0H1.2C.2 0 0 .4708 0 .9898c0 .927 1.1866 5.525 5.5249 11.6061C8.4171 16.749 12.492 19 16.2 19c2.2248 0 2.5-.5 2.5-1.3612V14.5c0-1 .2108-1.1996.9153-1.1996.519 0 1.409.2596 3.4855 2.2619C25.474 17.9354 25.8652 19 27.2 19h3.5c1 0 1.5-.5 1.2116-1.4867-.3157-.9834-1.4487-2.4103-2.9521-4.1016-.8158-.9641-2.0394-2.0023-2.4103-2.5215-.519-.6674-.3707-.964 0-1.5573 0 0 4.2643-6.007 4.7092-8.0463z" />
+              </svg>
+            </a>
+          </div>
+          <div class="contacts-info__info">
+            <p class="contacts-info__text">График работы:</p>
+            <p class="contacts-info__value"> с 10:00 до 19:00 без обеда и выходных</p>
+          </div>
+      </section>
+      <section class="main-container__section main-container__section--no-margin">
+        <h2 class="section-subtitle">Напишите нам</h2>
+        <form action="form.php" method="post" class="main-section__form form">
+          <fieldset class="form__user-info form__fieldset user-info form-fieldset">
+            <label class="user-info__field form-field"><span class="form__label form-label"> Контактное
+                лицо:*</span>
+              <input class="user-info__input input input--name" type="text" name="user-name" required>
+            </label>
+          </fieldset>
+          <fieldset class="form__contacts form__fieldset contacts-form form-fieldset">
+            <label class="contacts-form__field form-field"><span class="form__label form-label">
+                Телефон:*</span>
+              <input class="contacts-form__input input input--phone" type="tel" name="phone"
+                placeholder="8(000)000-00-00" required>
+            </label>
+            <label class="contacts-form__field form-field"><span class="form__label form-label">
+                e-mail:*</span>
+              <input class="contacts-form__input input input--email" type="email" name="email"
+                placeholder="mail@mail.com" required>
+            </label>
+          </fieldset>
+          <fieldset class="form__comments form__fieldset comments form-fieldset">
+            <label class="comments__field form-field"><span class="form__label form-label">
+                Текст сообщения</span>
+              <textarea class="comments__input input" name="comments"></textarea> </label>
+          </fieldset>
+
+          <!-- Скрытое поле - защита от спама -->
+          <textarea class="hidden" name="other-comment">
+            </textarea>
+          </fieldset>
+          <!-- <fieldset class="form__personal-agree personal-agree form-fieldset">
+            <label class="personal-agree__field">
+              <input type="checkbox" name="personal-agree" class="personal-agree__checkbox" required>
+              <span class="personal-agree__label">Я согласен на обработку персональных данных в
+                соответствии с <a href="privacy-policy.php" class="personal-agree__link" target="_blank">политикой
+                  конфиденциальности</a> </span>
+    
+            </label>
+          </fieldset> -->
+
+          <div class="form__validation-message validation-error hidden">
+            <p class="validation-error__message">Пожалуйста, заполните все обязательные поля и повторите отправку заявки
+            </p>
+          </div>
+          <div class="form__footer">
+
+            <div class="form__buttons buttons-wrapper">
+              <button class="form__submit button" type="submit">Отправить</button>
+              <button class="form__reset button button--secondary" type="reset">Сбросить</button>
+            </div>
+            <p class="form__legend">Oбязательные поля помечены *</p>
+            <p class="form__personal-agree personal-agree">Нажимая кнопку “Отправить”, вы соглашаетесь с условиями <a
+                class="personal-agree__link" href="privacy-policy.html" target="_blank">политики конфеденциальности</a>.
+            </p>
+          </div>
+
+        </form>
+      </section>
+    </div>
+
+    <section class="main-container__section section">
+      <h2 class="section__title section-title">Мы на карте</h2>
+      <div class="map-container">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A3d3495d8f6c307e99dc7ff1c853e72eeaa9a2e8c85a1b960f2532ca27ced706b&amp;source=constructor"
+          width="100%" height="100%" frameborder="0"></iframe>
+        </iframe>
+      </div>
+    </section>
+  </div>
+  </div>
+</main>
+<footer class="footer">
+  @@include('./templates/footer.html')
+</footer>
+<button class="button-up hidden" type="button" aria-label="Наверх"></button>
+
+@@include('./templates/modal-messages.html')
+@@include('./templates/script-block.html')
+
+
+<!-- <script type="module" src="js/modal-actions.js"></script> -->
+</body>
+
+</html>

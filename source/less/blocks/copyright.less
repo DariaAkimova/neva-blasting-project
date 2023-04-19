@@ -1,0 +1,17 @@
+.copyright {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.copyright__text {
+  margin: 0;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+    @media (min-width: @tablet-width) {
+      display: flex;
+      margin-bottom: 0px;
+      margin-right: 20px;
+    }
+  }
+}

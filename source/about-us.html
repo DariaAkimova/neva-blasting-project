@@ -1,0 +1,41 @@
+@@include('./templates/head.html', { "title": "О компании", "description": "2" })
+
+
+<main class="main-container no-js">
+  <div class="container">
+    <h1 class="visually-hidden">О компании</h1>
+    <section class="main-container__section about-us">
+      <h2 class="section__title section-title">О компании</h2>
+      <img src="img/catalog/ochistka-kirpich3.jpg" alt="Сотрудники компании Нева Бластинг за работой"
+        class="about-us__img" width="300" height="117">
+      <div class="about-us__wrapper">
+        <p class="about-us__description"> ООО "Нева Бластинг" успешно занимается пескоструйной очисткой и окраской
+          различных поверхностей на территории Санкт-Петербурга и Ленинградской области. Возможен выезд мастеров в
+          регионы. </p>
+        <p class="about-us__description"> Мы оказываем услуги как организациям, так и частным лицам.</p>
+        <p class="about-us__description"> Наши специалисты имеют опыт участия в работах по реставрации памятников
+          архитектуры, где применяется щадящий метод мягкой очистки реставрируемой поверхности от загрязнений (метод
+          СВАО) без разрушения исторической основы. <br>
+        </p>
+      </div>
+
+      <button class="about-us__btn order-btn button">Оставить заявку</button>
+    </section>
+
+    </section>
+  </div>
+
+</main>
+<footer class="footer">
+  @@include('./templates/footer.html')
+</footer>
+<button class="button-up hidden" type="button" aria-label="Наверх"></button>
+
+@@include('./templates/modal-form.html')
+@@include('./templates/modal-messages.html')
+@@include('./templates/script-block.html')
+
+<script type="module" src="js/modal-actions.js"></script>
+</body>
+
+</html>

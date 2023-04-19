@@ -1,0 +1,22 @@
+.order .container {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 2fr 3fr;
+    column-gap: 80px;
+    row-gap: 20px;
+  }
+}
+
+.order__description {
+  margin: 8px 0;
+
+  @media (min-width: @desktop-width) {
+    grid-column: 1/-1;
+  }
+}
+
+.order__options {
+  margin: 0 0 15px;
+}

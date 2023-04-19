@@ -1,0 +1,28 @@
+.input {
+  outline: none;
+
+  .input-box(fade(@light-grey, 30), none);
+  .input-text(@main-grey);
+
+  position: relative;
+
+  &:hover {
+    border: @input-hover-border;
+  }
+
+  &:focus {
+    border: @input-focus-border;
+  }
+
+  &--modal {
+    border: @input-border;
+    border-radius: 10px;
+    background: @white;
+  }
+}
+
+.input--error,
+.input--error&:hover,
+.input--error&:active {
+  border: @input-error-border;
+}

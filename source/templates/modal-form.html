@@ -1,0 +1,46 @@
+<!-- Модальное окно с формой обратной связи -->
+<template id="modal-form">
+  <div class="modal">
+    <form action="form.php" method="post" class="modal__form form form--modal">
+  <button class="modal__close-btn close-btn" aria-label="Закрыть"></button>
+  <p class="form__text">Чтобы оставить заявку, заполните форму обратной связи.</p>
+  <fieldset class="form__fieldset user-info">
+    <label class="form__field form-field"><span class="form__label form-label"> Контактное
+        лицо:*</span>
+      <input class="form__input input input--modal input--name" type="text" name="user-name" required>
+    </label>
+  </fieldset>
+  <fieldset class="form__fieldset contacts-form contacts-form--modal">
+    <label class="contacts-form__field contacts-form__field--modal form-field"><span class="form__label form-label">
+        Телефон:*</span>
+      <input class="contacts-form__input input input--modal input--phone" type="tel" name="phone" placeholder="8(000)000-00-00"
+        required>
+    </label>
+    <label class="contacts-form__field contacts-form__field--modal form-field"><span class="form__label form-label">
+        E-mail:*</span>
+      <input class="contacts-form__input input input--modal input--email" type="email" name="email" placeholder="mail@mail.com"
+        required>
+    </label>
+  </fieldset>
+  </label>
+  <!-- Скрытое поле - защита от спама -->
+  <textarea class="hidden" name="other-comment">
+      </textarea>
+  </fieldset>
+      <div class="form__validation-message validation-error hidden">
+    <p class="validation-error__message">Пожалуйста, заполните все обязательные поля и повторите отправку заявки
+    </p>
+  </div>
+  <div class="form__footer">
+   
+  
+      <button class="form__submit form__submit--modal button button--modal" type="submit">Отправить</button>
+      <p class="form__legend">Oбязательные поля помечены *</p>
+    <p class="form__personal-agree"> Нажимая кнопку “Отправить”, вы соглашаетесь с условиями <a
+      class="personal-agree__link" href="privacy-policy.html" target="_blank">политики конфеденциальности</a>.</p>
+  </div>
+</form>
+</div>
+</template>
+
+<!-- Конец модального окна -->

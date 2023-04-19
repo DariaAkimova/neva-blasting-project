@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="preload" href="fonts/open-sans-bold.woff" as="font">
+  <link rel="preload" href="fonts/open-sans-bold.woff2" as="font">
+  <link rel="preload" href="fonts/open-sans-semibold.woff" as="font">
+  <link rel="preload" href="fonts/open-sans-semibold.woff2" as="font">
+  <link rel="preload" href="fonts/open-sans-regular.woff" as="font">
+  <link rel="preload" href="fonts/open-sans-regular.woff2" as="font">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/180.png">
+  <link rel="icon" href="img/favicons/192.png" type="image/png">
+  <link rel="icon" href="img/favicons/512.png" type="image/png">
+  <title>@@title</title>
+  <meta name="description" content="@@description">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__logo">
+        <a class="header__logo-img logo" href="#">
+          <picture>
+            <source media="(min-width:1340px)" srcset="img/logo_desktop.svg">
+            <!-- <source media="(min-width:768px)" srcset="img/logo_tablet.svg"> -->
+            <img class="logo__img" src="img/logo_mobile.svg" width="160" height="25" alt="Логотип Нева Бластинг">
+          </picture>
+        </a>
+      </div>
+      <div class="header__contacts header-contacts">
+        <div class="header-contacts__phone header-contacts__phone--first">
+          <p class="header-contacts__info header-contacts__info--phone">Для физ. лиц:</p>
+          <div class="header-contacts__phone-wrapper">
+            <a class="header-contacts__phone-link" href="tel:+79219475003">+7 (921) 947-50-03</a>
+            <a class="header-contacts__phone-link" href="tel:+79219475004">+7 (921) 947-50-04</a>
+          </div>
+        </div>
+        <div class="header-contacts__phone header-contacts__phone--second">
+          <p class="header-contacts__info header-contacts__info--phone">Для юр. лиц:</p>
+          <a class="header-contacts__number" href="tel:+79219388038">+7 (921) 938-80-38</a>
+        </div>
+        <div class="header-contacts__info header-contacts__info--address">г. Санкт-Петербург, Челябинская ул., д. 109
+        </div>
+        <div class="header-contacts__info header-contacts__info--schedule">Пн-Вс: 10:00 - 19:00</div>
+      </div>
+      <nav class="header__menu main-nav main-nav--opened no-js">
+        <button class="main-nav__toggle">
+          <span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list site-list list">
+
+          <li class="site-list__item ">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="about-us.html">О компании</a>
+          </li>
+          <li class="site-list__item sub-nav sub-nav--opened no-js">
+            <a href="catalog.html">Услуги</a>
+            <button class="sub-nav__toggle open-submenu"></button>
+            <ul class="sub-nav__list nav-sublist">
+              <li class="nav-sublist__item">
+                <a href="ochistka-avto.html">Пескоструйная очистка металла</a>
+              </li>
+              <li class="nav-sublist__item">
+                <a href="ochistka-avto.html">Пескоструйная очистка бетона</a>
+              </li>
+              <li class="nav-sublist__item">
+                <a href="ochistka-avto.html">Пескоструйная очистка фасадов</a>
+              </li>
+              <li class="nav-sublist__item">
+                <a href="ochistka-avto.html">Пескоструйная очистка дисков</a>
+              </li>
+              <li class="nav-sublist__item">
+                <a href="ochistka-avto.html">Пескоструйная очистка металла</a>
+              </li>
+              <li class="nav-sublist__item">
+                <a href="ochistka-avto.html">Пескоструйная очистка бетона</a>
+              </li>
+              <li class="nav-sublist__item">
+                <a href="ochistka-avto.html">Пескоструйная очистка фасадов</a>
+              </li>
+              <li class="nav-sublist__item">
+                <a href="ochistka-avto.html">Пескоструйная очистка дисков</a>
+              </li>
+            </ul>
+          </li>
+          <!-- <li class="site-list__item site-list__item--active">
+            <a href="gallery.html">Наши работы</a>
+          </li> -->
+          <li class="site-list__item">
+            <a href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>

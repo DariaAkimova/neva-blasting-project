@@ -1,0 +1,29 @@
+.service-list {
+  .list();
+  margin-bottom: 0;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 17px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px 134px;
+  }
+}
+
+.service-list__item {
+  margin: 0;
+  line-height: 1.33;
+
+  &:last-child {
+    @media (min-width: @desktop-width) {
+      margin-top: 0;
+    }
+  }
+}
